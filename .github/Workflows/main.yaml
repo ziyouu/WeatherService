@@ -1,13 +1,13 @@
-name: my first workflow
+name: My first Workflow
 on:
-  push:
+   push:
 jobs:
   echo_the_date:
-  runs-on: ubuntu-latest
-  steps:
-  - name: echo the date
-    run: echo "The current time and date is $(date)"
-  - name: Simulate a fail
-    run: exit 1
-  - name: echo the current branch
-    run: echo ${{ github.ref_name }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo the echo_the_date
+      run: echo "The current time and date is $(date)"
+    - name: stimulate a fail
+      run: exit 1
+    - name: echo the current branch
+      run: echo ${{github.ref_name}}
